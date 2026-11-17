@@ -1,0 +1,50 @@
+name: trackify
+description: Trackify - open-source music player (native Flutter UI, no webview).
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  crypto: ^3.0.6
+  dart_discord_rpc: ^0.0.1
+  flutter_secure_storage: ^9.2.4
+  http: ^1.2.2
+  url_launcher: ^6.3.1
+  # ---- stage 2+ (подключим, когда дойдём до функций) ----
+  # supabase_flutter: ^2.8.0      # чат, форум, аккаунты, аплоады
+  # just_audio: ^0.9.40           # воспроизведение
+  # window_manager: ^0.4.0        # окно без рамки, закрытие в трей
+  # tray_manager: ^0.2.3          # иконка в трее
+  # dart_discord_rpc: ^1.0.0      # активность в Discord
+  # palette_generator: ^0.3.3     # цвет фона из обложки
+  # video_player: ^2.9.0          # подарки mp4 без звука
+  # image_cropper / crop_your_image: кроп аватаров
+  # auto_updater: ^1.0.0          # автообновление
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/gifts/
+    - assets/badges/
+  # Шрифты: скачай Pixelify Sans и Inter (Google Fonts, OFL) в assets/fonts/ и раскомментируй.
+  # fonts:
+  #   - family: Pixelify
+  #     fonts:
+  #       - asset: assets/fonts/PixelifySans-Regular.ttf
+  #       - asset: assets/fonts/PixelifySans-Bold.ttf
+  #         weight: 700
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
